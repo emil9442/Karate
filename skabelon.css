@@ -1,0 +1,418 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+#000000 SORT
+#FFFFFF Hvid
+#C70011 RØD
+#E6E6E6 Lysegrå
+#9F9F9E Mørke grå
+*/
+	body {
+	  background-color: white;
+	}
+
+	#wrapper {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-column-gap: 0.75em;
+		margin: 0 2em;
+	}
+
+/* navigation grid range*/
+	nav {
+		grid-column: 1/5;
+		display: flex;
+		align-items: center;
+		background: black;
+		margin: 0 -50px 0 -50px;
+	}
+
+/* Nav links styling */
+nav ul{
+		display:flex;
+    list-style-type: none;
+		vertical-align: middle;
+
+}
+
+nav ul li:first-of-type {
+  margin-left: 0;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: white;
+	font-family: 'Work Sans', sans-serif;
+}
+
+	nav ul li {
+  	grid-column: 4/5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 32px;
+}
+
+.index_text1 {
+	grid-column: 1/5;
+	text-align: center;
+}
+
+.index_text2 {
+	grid-column: 1/5;
+	text-align: center;
+}
+/* ikke i stand til at få menu og billde på linje */
+
+.topicon {
+ /*float: right; /* virker ikke med flex*/
+   margin-left: 40px;
+}
+
+
+header{
+	grid-column: 1/5;
+	background-color: white;
+	text-align: center;
+	margin: 0 -3em;
+}
+
+
+header img {
+padding: 1rem 0 1rem 0;
+width: 50%;
+height: 50%
+
+}
+
+section{
+	grid-column: 1/5;
+	background-color: white; /*grå margin*/
+	display: flex;
+}
+
+/* flex felt for indehold*/
+.boxes {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	margin-top: 5rem;
+}
+
+/* hovedmenu class - boxes  */
+.boxtext {
+	text-align: center;
+	font-family: 'Taviraj', serif;
+
+	}
+.box_header {
+font-family: 'Work Sans', sans-serif;
+}
+.box_lightgray {
+	display:flex;
+	align-content: center;
+  align-items: center;
+	flex-direction: column;
+	background-color: #E6E6E6 /* box colour */;
+	margin : 0 1rem  0 1rem;
+}
+
+.box_gray{
+	margin : 5rem 1rem  0 1rem;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #9F9F9E /* box colour */
+}
+
+.box_lightgray {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #E6E6E6 /* box colour */;
+	margin : 5rem 1rem  0 1rem;
+
+}
+
+.box_gray {
+	margin : 5rem 1rem  3rem 1rem;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #9F9F9E;  /* box colour */
+}
+
+
+
+/* box bottom */
+.boxbottom{
+	padding: 0.rem 1.3rem;
+	text-decoration: none;
+	border: 0;
+	/* background-color: white;	/* læs mere - colour */
+}
+
+/* topicon movment */
+
+
+/* Images */
+.boxicon {
+	/*idth: 100%;*/
+
+}
+
+footer{
+ padding-top: 1rem;
+	/* lave grid og sæt ting up ? grid til flex ?*/
+	grid-column: 1/5;
+	background-color: black;
+	text-align: center;
+
+}
+footer p {
+color: #FFFFFF;
+
+
+}
+
+.boxes_omklubben{
+	display:flex;
+	align-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	background-color: #fff /* box colour */;
+}
+
+.boxes_kontact{
+	display:flex;
+	align-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	background-color: #fff /* box colour */;
+}
+
+.boxes_traening{
+	grid-column: 1/5;
+	display:flex;
+	align-items: flex-start;
+	flex-direction: column;
+	text-align: left;
+	background-color: #fff; /* box colour */;
+}
+
+.boxes_tilmelding {
+	grid-column: 1/5;
+	display:flex;
+	align-items: flex-start;
+	flex-direction: column;
+	text-align: left;
+	background-color: #fff /* box colour */;
+	
+
+}
+
+
+p.thick{
+	font-weight: bold;
+	margin-bottom: -10px;
+	font-size: 20px;
+	text-align: left;
+	margin-bottom: -5px;
+
+}
+
+
+
+
+@media only screen and (min-width: 600px) {
+body {
+background-color: white;
+}
+
+#wrapper {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-column-gap: 0.75em;
+	margin: 0 2em;
+}
+
+nav {
+	grid-column: 1/13;
+
+}
+
+/* Nav links styling */
+
+nav ul li {
+display: inline-flex;
+/*vertical-align: middle;*/
+
+}
+/* ikke i stand til at få menu og billde på linje*/
+.topicon {
+float: right;
+
+}
+
+header{
+grid-column: 1/13;
+background-color: white;
+text-align: center;
+margin: 0 -3em;
+
+}
+
+.index_text1 {
+	grid-column: 1/13;
+	text-align: center;
+}
+
+.index_text2 {
+	grid-column: 1/13;
+	text-align: center;
+}
+
+section{
+grid-column: 1/13;
+background-color: white;
+display: grid;
+grid-template-columns: 50% 50%
+/*justify-content: center;*/
+}
+
+/* flex felt for indehold*/
+.boxes{
+display: grid;
+margin-top: 0rem;
+
+}
+
+/* hovedmenu class - boxes  */
+
+.box_omklubben {
+display:flex;
+align-content: center;
+align-items: center;
+flex-direction: column;
+background-color: #AA3AA9
+}
+
+.box_træning{
+margin-top: 0;
+display:flex;
+flex-direction: column;
+align-items: center;
+background-color: #AA3AA9
+}
+
+.box_tilmelding {
+margin-top: 5rem;
+display:flex;
+flex-direction: column;
+align-items: center$;
+margin-bottom: 3rem;
+background-color: #AA3AA9;
+
+}
+p.text_box
+{
+	width: 32em;
+	
+	
+}
+.box_kontact {
+margin-top: 5rem;
+display:flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 3rem;
+background-color: #AA3AA9
+}
+
+
+/* box bottom */
+.boxbottom{
+padding: 0.6rem 1.3rem;
+text-decoration: none;
+border: 0;
+background-color: white;
+}
+
+/* topicon movment */
+
+
+/* Images */
+.boxicon {
+/*idth: 100%;*/
+}
+
+
+.box_gray {
+	margin : 5rem 1rem 0 0 ;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #9F9F9E;  /* box colour */
+}
+
+
+.boxes_omklubben{
+	grid-column: 1/13;
+	display:flex;
+
+	align-items: flex-start;
+	flex-direction: column;
+	text-align: left;
+	background-color: #fff /* box colour */;
+}
+
+.boxes_kontact{
+	grid-column: 1/13;
+	display:flex;
+	align-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	background-color: #fff /* box colour */;
+}
+
+.boxes_traening{
+	grid-column: 1/13;
+	display:flex;
+	align-items: flex-start;
+	flex-direction: column;
+	text-align: left;
+	background-color: #fff /* box colour */;
+}
+
+
+.boxes_tilmelding {
+	grid-column: 1/13;
+	display:flex;
+	align-items: flex-start;
+	flex-direction: column;
+	text-align: left;
+	background-color: #fff /* box colour */;
+
+}
+
+
+
+/* text styling */
+
+
+.space {
+	margin-bottom	: 0px;
+}
+
+footer{
+padding-top: 1rem;
+grid-column: 1/13;
+background-color: black;
+}
+
+p.space2 {
+	margin-bottom: 5px;
+}
